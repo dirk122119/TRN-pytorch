@@ -4,7 +4,7 @@ import torchvision
 import torchvision.datasets as datasets
 
 
-ROOT_DATASET = 'video_datasets'
+ROOT_DATASET = r'F:/DATASET'
 
 
 def return_something(modality):
@@ -67,6 +67,16 @@ def return_jester(modality):
         os.exit()
     return filename_categories, filename_imglist_train, filename_imglist_val, root_data, prefix
 
+def return_NGB(modality):
+    filename_categories = ROOT_DATASET+'/NGB_data/category.txt'
+    if modality == 'RGB':
+        prefix = '{:05d}.jpg'
+        root_data = ROOT_DATASET + '/NGB_data'
+        filename_imglist_train = ROOT_DATASET+'/NGB_data/train_videofolder.txt'
+        filename_imglist_val = ROOT_DATASET+'/NGB_data/val_videofolder.txt'
+    else:
+        raise NotImplementedError('no such modality:'+modality)
+    return filename_categories, filename_imglist_train, filename_imglist_val, root_data, prefix
 
 def return_charades(modality):
     filename_categories = 'charades/category.txt'
@@ -101,7 +111,7 @@ def return_moments(modality):
 
 def return_dataset(dataset, modality):
     dict_single = {'jester': return_jester, 'something': return_something, 'somethingv2': return_somethingv2,
-                   'charades': return_charades, 'moments': return_moments}
+                   'charades': return_charades, 'moments': return_moments,'NGB': return_NGB}
     if dataset in dict_single:
         file_categories, file_imglist_train, file_imglist_val, root_data, prefix = dict_single[dataset](modality)
     else:
