@@ -1,0 +1,13 @@
+F:/jupyterworkplace/filetoimage/NGB_data/24 80 5
+F:/jupyterworkplace/filetoimage/NGB_data/63 181 5
+F:/jupyterworkplace/filetoimage/NGB_data/10 201 5
+F:/jupyterworkplace/filetoimage/NGB_data/20 101 6
+F:/jupyterworkplace/filetoimage/NGB_data/49 321 1
+F:/jupyterworkplace/filetoimage/NGB_data/4 54 8
+F:/jupyterworkplace/filetoimage/NGB_data/23 205 1
+F:/jupyterworkplace/filetoimage/NGB_data/79 86 6
+F:/jupyterworkplace/filetoimage/NGB_data/72 221 4
+F:/jupyterworkplace/filetoimage/NGB_data/64 106 0
+F:/jupyterworkplace/filetoimage/NGB_data/66 68 7
+F:/jupyterworkplace/filetoimage/NGB_data/61 151 2
+F:/jupyterworkplace/filetoimage/NGB_data/50 146 2
